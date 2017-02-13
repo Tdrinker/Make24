@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C68" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="play_24" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="243-wt-UKr" userLabel="background">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="Rlb-Jp-Jis" userLabel="firstCard">
+                                <rect key="frame" x="46" y="234" width="70" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="aYZ-61-l94"/>
+                                    <constraint firstAttribute="height" constant="100" id="ucC-LT-Iq8"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="Ba1-Ym-ZYQ" userLabel="secondCard">
+                                <rect key="frame" x="121" y="234" width="70" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="iO7-LA-cwp"/>
+                                    <constraint firstAttribute="width" constant="70" id="lGs-fv-ZI6"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="5sD-MX-g97" userLabel="thirdCard">
+                                <rect key="frame" x="196" y="234" width="70" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="DH4-AI-jGi"/>
+                                    <constraint firstAttribute="height" constant="100" id="iWb-vm-chb"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="qhb-Bm-Goc" userLabel="fourthCard">
+                                <rect key="frame" x="215" y="234" width="70" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="0Gy-rL-64R"/>
+                                    <constraint firstAttribute="height" constant="100" id="sxL-NL-kZh"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U6a-jb-euq">
+                                <rect key="frame" x="101" y="451" width="119" height="57"/>
+                                <state key="normal" image="dealButton"/>
+                                <connections>
+                                    <action selector="playButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WGD-U1-AkC"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="swS-oS-Jlc" userLabel="logo">
+                                <rect key="frame" x="22" y="20" width="276" height="188"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="243-wt-UKr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="0b1-qR-wde"/>
+                            <constraint firstItem="U6a-jb-euq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5D8-P7-7rH"/>
+                            <constraint firstItem="Rlb-Jp-Jis" firstAttribute="top" secondItem="swS-oS-Jlc" secondAttribute="bottom" constant="26" id="AxD-Ca-eV0"/>
+                            <constraint firstItem="swS-oS-Jlc" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="20" id="FHL-zY-aw6"/>
+                            <constraint firstItem="243-wt-UKr" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="MSf-8Y-uCw"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="U6a-jb-euq" secondAttribute="bottom" constant="60" id="O0O-jv-4Ba"/>
+                            <constraint firstItem="Ba1-Ym-ZYQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Ps2-h0-ZP9"/>
+                            <constraint firstItem="Ba1-Ym-ZYQ" firstAttribute="leading" secondItem="Rlb-Jp-Jis" secondAttribute="trailing" constant="5" id="Rho-sf-8Ov"/>
+                            <constraint firstAttribute="trailing" secondItem="qhb-Bm-Goc" secondAttribute="trailing" constant="35" id="TCk-BS-6cS"/>
+                            <constraint firstItem="5sD-MX-g97" firstAttribute="leading" secondItem="Ba1-Ym-ZYQ" secondAttribute="trailing" constant="5" id="TtJ-h3-7r3"/>
+                            <constraint firstItem="Rlb-Jp-Jis" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="aWI-cS-UqK"/>
+                            <constraint firstItem="5sD-MX-g97" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bK7-sw-3zX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="swS-oS-Jlc" secondAttribute="trailing" constant="6" id="hMr-VF-SHY"/>
+                            <constraint firstAttribute="trailing" secondItem="243-wt-UKr" secondAttribute="trailing" id="iFK-da-oSo"/>
+                            <constraint firstAttribute="bottom" secondItem="243-wt-UKr" secondAttribute="bottom" id="jFf-B5-BrB"/>
+                            <constraint firstItem="Rlb-Jp-Jis" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="nNs-Ng-mYe"/>
+                            <constraint firstItem="qhb-Bm-Goc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="qss-VG-6Pn"/>
+                            <constraint firstItem="swS-oS-Jlc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="6" id="vE3-sO-NTg"/>
+                        </constraints>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="Ba1-Ym-ZYQ"/>
+                                <include reference="5sD-MX-g97"/>
+                                <include reference="qhb-Bm-Goc"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="firstCardImageView" destination="Rlb-Jp-Jis" id="2DC-Lf-bM7"/>
+                        <outlet property="fourthCardImageView" destination="qhb-Bm-Goc" id="GOx-4f-jwh"/>
+                        <outlet property="playRoundButton" destination="U6a-jb-euq" id="fHC-4q-tjm"/>
+                        <outlet property="secondCardImageView" destination="Ba1-Ym-ZYQ" id="Ys6-2t-U6l"/>
+                        <outlet property="thirdCardImageView" destination="5sD-MX-g97" id="ZVh-xK-neD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="303.75" y="353.87323943661971"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back" width="251" height="352"/>
+        <image name="background" width="426" height="300"/>
+        <image name="dealButton" width="119" height="57"/>
+        <image name="logo" width="666" height="353"/>
+    </resources>
+</document>
